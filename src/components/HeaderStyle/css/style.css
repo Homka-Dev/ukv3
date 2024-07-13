@@ -7,6 +7,7 @@
 a {
   list-style: none;
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 body .header__wrapper {
   display: flex;
-  background: url(../../../image/header-bg.png) no-repeat;
+  background: url(/image/header-bg.png) no-repeat;
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -34,6 +35,64 @@ body .header__wrapper .header_icons__container .discord_icons {
 body .header__wrapper .header_icons__container .telegram_icons {
   color: white;
   font-size: 60px;
+}
+body .header__wrapper nav {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  display: flex;
+  margin-left: 50px;
+  left: 50%;
+  top: 340px;
+  transform: translate(-50%);
+}
+body .header__wrapper nav .links {
+  color: rgb(253, 186, 116);
+  font-size: 27px;
+  margin-left: 30px;
+}
+body .header__wrapper nav .link__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .header__wrapper nav .link__1::after {
+  content: "Головна";
+  color: white;
+  position: relative;
+  font-weight: 600;
+  display: flex;
+}
+body .header__wrapper nav .link__2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .header__wrapper nav .link__2::after {
+  content: "Правила";
+  color: white;
+  font-weight: 600;
+}
+body .header__wrapper nav .link__3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .header__wrapper nav .link__3::after {
+  content: "Сервери";
+  color: white;
+  font-weight: 600;
+}
+body .header__wrapper nav .link__4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .header__wrapper nav .link__4::after {
+  content: "Магазин";
+  color: white;
+  font-weight: 600;
 }
 body .Header__Logo {
   width: 300px;
